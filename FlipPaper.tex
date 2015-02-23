@@ -1,0 +1,258 @@
+\documentclass[12pt]{article}
+%% arXiv paper template by Flip Tanedo
+%% last updated: Dec 2014
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  THE USUAL PACKAGES  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}         % \
+\usepackage{amssymb}         %  | AMS Packages for math
+\usepackage{amsfonts}        % /
+\usepackage{graphicx}        % Graphics
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  UNUSUAL PACKAGES        %%%%
+%%%  Uncomment as necessary. %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{lipsum}        % block of text (formatting test)
+%\usepackage{color}         % \color{...}, colored text
+%\usepackage{slashed}       % \slashed{k}
+%\usepackage{framed}        % boxed remarks
+%\usepackage{subcaption}    % subfigures; subfig depreciated
+%\usepackage{mathrsfs}      % Weinberg-esque letters
+%\usepackage{paralist}      % compactitem
+%\usepackage{multirow}      % multiple row elements in a table
+%\usepackage{cite}          % grouped cites (incompat. w/ collref)
+%\usepackage{booktabs}      % tables
+%\usepackage{nicefrac}      % fractions in tables,
+%\usepackage{youngtab}	    % Young Tableaux
+%\usepackage{arydshln} 	    % dashed lines in arrays and tables
+%\usepackage{appendix}      % subappendices
+%\usepackage{pifont}        % check marks
+%\usepackage{bbm}           % \mathbbm{1} incompatible with XeLaTeX 
+%\usepackage{listings}       % \begin{lstlisting}, for code
+
+%\usepackage[font=small]{caption} % caption font is small
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  FLIP'S CUSTOM PACKAGES            %%%%
+%%%  These are in separate .sty files  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{flip-acronyms} % HEP acronyms in small caps, e.g. \GeV
+\usepackage{tikzfeynman}   % Flip's Feynman Diagrams
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  PAGE FORMATTING and (RE)NEW COMMANDS  %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage[margin=2cm]{geometry}   % reasonable margins
+\graphicspath{{figures/}}	        % set directory for figures
+\numberwithin{equation}{section}    % set equation numbering
+\renewcommand{\tilde}{\widetilde}   % tilde over characters
+\renewcommand{\vec}[1]{\mathbf{#1}} % vectors are boldface
+
+
+\newcommand{\dbar}{d\mkern-6mu\mathchar'26}    % for d/2pi
+\newcommand{\ket}[1]{\left|#1\right\rangle}    % <#1|
+\newcommand{\bra}[1]{\left\langle#1\right|}    % |#1>
+\newcommand{\Xmark}{\text{\sffamily X}}        % cross out
+
+% Change list spacing
+% from: http://en.wikibooks.org/wiki/LaTeX/List_Structures#Line_spacing
+\let\oldenumerate\enumerate
+\renewcommand{\enumerate}{
+  \oldenumerate
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+
+\let\olditemize\itemize
+\renewcommand{\itemize}{
+  \olditemize
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+
+
+% Commands for temporary comments
+\newcommand{\comment}[2]{\textcolor{red}{[\textbf{#1} #2]}}
+\newcommand{\flip}[1]{{\tt \color{red} [Flip: {#1}]}}
+\newcommand{\email}[1]{\href{mailto:#1}{#1}}
+
+
+\newenvironment{institutions}[1][2em]{\begin{list}{}{\setlength\leftmargin{#1}\setlength\rightmargin{#1}}\item[]}{\end{list}}
+
+
+% Commands for listings package
+% NEEDS: \usepackage{listings} above!
+% \lstset{basicstyle=\ttfamily\footnotesize,breaklines=true}
+%    sets style to small true-type
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  TIKZ COMMANDS FOR EXTERNAL DIAGRAMS  %%%%
+%%%  requires -shell-escape               %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usetikzlibrary{external}
+%\tikzexternalize[prefix=tikz/] % folder for external pdfs
+
+
+
+%%%%%%%%%%%%%%%%%%%
+%%%  HYPERREF  %%%%
+%%%%%%%%%%%%%%%%%%%
+
+% This package has to be at the end; can lead to conflicts
+\usepackage[
+	colorlinks=true,
+	citecolor=black,
+	linkcolor=black,
+	urlcolor=blue,
+	hypertexnames=false]{hyperref}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  TITLE DATA  %%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+
+    {\huge \bf  Flip's Paper Title}
+
+    \vskip .7cm
+
+    { \bf First Author$^{a}$ and Philip Tanedo$^{b}$ } 
+    \\ \vspace{-.2em}
+    { \tt
+    \footnotesize
+    \email{first.author@university.edu}, 
+    \email{flip.tanedo@uci.edu} 
+    }
+	
+    \vspace{-.2cm}
+
+    \begin{institutions}[2.25cm]
+    \footnotesize
+    $^{a}$ {\it 
+        Department of Physics, 
+        University, 
+        University Town, \textsc{ca} 90210
+        }
+	\\ 
+	\vspace*{0.05cm}
+	$^{b}$ {\it 
+	    Department of Physics \& Astronomy, 
+	    University of California, 
+	    Irvine, \textsc{ca} 92697
+	    }   
+    \end{institutions}
+
+\end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  ABSTRACT    %%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+\noindent 
+This is a simple template for my papers. It's not very different from the plain article style, but it has most of the macros I use pre-written.
+\end{abstract}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  THE MEAT    %%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+% Use \input if you have separate files.
+% \include is `smarter' (creates separate aux files for each tex file) 
+% and hence more efficient, but it automatically puts a page break
+% between included files. Input doesn't do this.
+
+
+\section{Introduction}
+
+In the beginning...
+
+
+\section{Note on External TikZ Diagrams}
+
+ This is a bit cumbersome, so I'll leave it commented out by default
+ Usage: create the subdirectory tikz (or whatever ``prefix'' you use in
+ the \texttt{tikzexternalize} option). Make sure the \texttt{-shell-escape} 
+ is used when you compile. 
+ %
+ For Texpad this is a checkbox in the typesetting preferences.
+ Tikz pictures will be exported as PDFs in the tikz directory.
+
+ Note: this is NOT perfect! Some diagrams come out wonky, especially if you
+ use arrows (e.g. for Feynman diagrams) or if you put the Tikz pictures in
+ odd places (like in equation environments). What it does buy you is a HUGE
+ improvement in compile time. I suggest using this for intermediate 
+ typesets in a large document. For the final compile just turn it off again
+ so you get clean graphics.
+ 
+\section{Itemize test}
+
+\begin{itemize}% \itemsep1pt \parskip0pt \parsep0pt
+\item Item 1
+\item Item 2
+\item Item 3
+\end{itemize}
+
+\begin{enumerate}% \itemsep1pt \parskip0pt \parsep0pt
+\item Item 1
+\item Item 2
+\item Item 3
+\end{enumerate}
+
+
+ 
+\section{lipsum}
+ 
+ \lipsum[3-5]
+
+
+\section{XeLaTeX}
+
+XeLaTeX lets you access local system fonts for use in \LaTeX. It's great for Beamer, but I don't recommend it in a regular paper. It doesn't play well with some useful macros like `blackboard math,' \url{http://tinyurl.com/a28hrle}.
+
+
+
+
+\section*{Acknowledgements}
+
+
+This work is supported in part by the \textsc{nsf} grant \textsc{phy}-1316792. 
+%
+\textsc{p.t.}\ thanks 
+\emph{your name here}
+for useful comments and discussions. 
+%
+\textsc{p.t.} thanks the Aspen Center for Physics (NSF grant \#1066293) for its hospitality during a period where part of this work was completed.
+
+%% Appendices
+% \appendix
+
+% \bibliographystyle{utphys} 
+% \bibliography{bib title without .bib}
+
+\end{document}
