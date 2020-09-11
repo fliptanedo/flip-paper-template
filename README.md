@@ -17,4 +17,8 @@ For those, like me, are less competent with `git` and GitHub than we really augh
 
 4. Locally (on your system) go to the parent directory of where you'd like to start a new LaTeX project and open a Terminal (command prompt) window there. Assuming you have `git` set up, you can simply type in `git clone https://github.com/fliptanedo/flip-paper-template.git` and press enter.
 
-5. This should create a new folder `
+5. This should create a new folder `flip-paper-template`. Go ahead and rename it right away. `mv flip-paper-template new-folder-name`.
+
+6. Go ahead and start your new project.
+
+7. If you'd like to put this new project on GitHub, just start a new GitHub repository through the web interface. Do not initialize with a `README.md` file. Follow the steps to push and existing repository. This should bea `git remote add origin` command followed by a `git push -u origin master` command.
