@@ -3,7 +3,7 @@ A LaTeX paper template that I use for papers and notes.
 
 By Flip Tanedo (flip.tanedo@ucr.edu)
 
-Uses Jacques Distler's `utcaps.bst` and AAS TeX's `aas_macros.sty`, included in this repository. 
+Uses Jacques Distler's `utcaps.bst` and AAS TeX's `aas_macros.sty`, included in this repository. Place figures in the `\figures` directory. 
 
 ## How to use this
 
@@ -22,3 +22,5 @@ For those, like me, are less competent with `git` and GitHub than we really augh
 6. Go ahead and start your new project.
 
 7. If you'd like to put this new project on GitHub, just start a new GitHub repository through the web interface. Do not initialize with a `README.md` file. Follow the steps to push and existing repository. This should bea `git remote add origin` command followed by a `git push -u origin master` command.
+
+That should do it.
