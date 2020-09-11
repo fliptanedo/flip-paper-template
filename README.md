@@ -21,6 +21,6 @@ For those, like me, are less competent with `git` and GitHub than we really augh
 
 6. Go ahead and start your new project.
 
-7. If you'd like to put this new project on GitHub, just start a new GitHub repository through the web interface. Do not initialize with a `README.md` file. Follow the steps to push and existing repository. This should bea `git remote add origin` command followed by a `git push -u origin master` command.
+7. If you'd like to put this new project on GitHub, just start a new GitHub repository through the web interface. Do not initialize with a `README.md` file. Follow the steps to push and existing repository. This should be a `git remote add origin` command followed by a `git push -u origin master` command. **Except**: there's one problem. Your copy of `flip-paper-tempalte` (now renamed) is *already* connected to the paper template GitHub repository. So if you follow the GitHub directions you'll get an error: `fatal: remote origin already exists.`. Instead, the first line should be `git remote set-url origin [https://github.com/....git]`. 
 
 That should do it.
