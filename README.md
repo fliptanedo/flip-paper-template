@@ -1,10 +1,6 @@
 # flip-paper-template
 A LaTeX paper template that I use for papers and notes.
 
-By Flip Tanedo
-Uploaded 22 Feb 2015
+By Flip Tanedo (flip.tanedo@ucr.edu)
 
-Notes: 
-- Assumes the existence of a figures/ subfolder where images can be placed
-- There are commented out lines for bibTeX
-- Also includes (possibly old) versions of tikzfeynman.sty and flip-acronyms.sty
+Uses Jacques Distler's `utcaps.bst` and AAS TeX's `aas_macros.sty`, included in this repository. 
