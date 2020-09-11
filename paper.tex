@@ -1,0 +1,152 @@
+%% LaTeX Paper Template, Flip Tanedo (flip.tanedo@ucr.edu)
+%% last updated: April 2020
+
+\documentclass[12pt]{article}
+% \pdfoutput=1 % for JHEP
+\newcommand{\FlipTR}{UCR-TR-2020-FLIP-00X}
+\input{FlipPreamble}
+
+
+\begin{document}
+
+%\thispagestyle{empty}		% default if no preprint #
+\thispagestyle{firststyle} 	% to include preprint # on first page
+							% but pdfsync may fail on 1st page
+
+\begin{center}
+
+    {\huge \bf Clever Paper Title}
+
+    \vskip .7cm
+
+%% SINGLE AUTHOR FORMAT
+%% --------------------
+	\textbf{Flip Tanedo} \\
+	\texttt{\footnotesize \email{flip.tanedo@ucr.edu}}
+
+	\vspace{-1em}
+    \begin{institutions}[2.25cm]
+    \footnotesize
+    {\it 
+	    Department of Physics \& Astronomy, 
+	    University of  California, Riverside, 
+	    {CA} 92521	    
+	    }    
+    \end{institutions}
+
+
+%% MULTIPLE AUTHOR FORMAT
+%% --------------------
+%    { \bf 
+%    	Philip Tanedo$^{a}$
+%    	and 
+%    	Another Author$^{b}$ 
+%    	} 
+%    \\ 
+%    \vspace{-.2em}
+%    { \tt \footnotesize
+%	    \email{flip.tanedo@ucr.edu},
+%	    \email{another.author@university.edu}
+%    }
+%	
+%    \vspace{-.2cm}
+%
+%    \begin{institutions}[2.25cm]
+%    \footnotesize
+%    $^{a}$ 
+%    {\it 
+%	    Department of Physics \& Astronomy, 
+%	    University of  California, Riverside, 
+%	    {CA} 92521	    
+%	    }    
+%	\\ 
+%	\vspace*{0.05cm}   
+%	$^{b}$ 
+%	{\it 
+%        Department of Physics, 
+%        University, 
+%        University Town, CA 90210
+%        }
+%    \end{institutions}
+
+\end{center}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  ABSTRACT    %%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+\noindent 
+This is a simple template for my papers. It's not very different from the plain article style, but it has most of the macros I use pre-written.
+\end{abstract}
+
+
+
+\small
+\setcounter{tocdepth}{2}
+\tableofcontents
+\normalsize
+%\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  THE CONTENT  %%%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+In the beginning... \lipsum[5]
+
+\section{Table Example}
+
+\lipsum[2]
+
+ 
+\begin{table}
+	\renewcommand{\arraystretch}{1.3} % spacing between rows
+	\centering
+	\begin{tabular}{ @{} llll @{} } \toprule % @{} removes space
+		Element & Core MF & Mantle MF & $C_\text{cap}^N (\text{s}^{-1})$ 
+		\\ \hline
+		Iron & 0.855 & 0.0626 & $9.43\times 10^{7}$ 
+		\\
+		Nickel & 0.052 & 0.00196 & $7.10\times 10^{6}$ 
+		\\
+		Silicon & 0.06 & 0.210 & $2.24\times 10^{6}$ 
+		\\
+		Magnesium & 0 & 0.228 & $1.05\times 10^{6}$ 
+		\\ \bottomrule
+	\end{tabular}
+	\caption{
+		Mass fractions of the Earth's core and mantle.
+		\label{table:elements}
+	}
+\end{table}
+
+
+ \section*{Acknowledgments}
+
+
+%This work is supported in part by 
+%the \textsc{nsf} grant \textsc{phy}-1316792. 
+%
+\textsc{p.t.}\ thanks 
+\emph{your name here}
+for useful comments and discussions. 
+%
+\textsc{p.t.} thanks the Aspen Center for Physics (NSF grant \#1066293) for its hospitality during a period where part of this work was completed. \textsc{p.t.} is supported by the DOE grant \textsc{de-sc}/0008541.
+
+%% Appendices
+% \appendix
+
+
+%% Bibliography
+%\bibliographystyle{utcaps} 	% arXiv hyperlinks, preserves caps in title
+%\bibliographystyle{utphys} 	% arXiv hyperlinks
+% \bibliography{bib title without .bib}
+
+
+\end{document}
