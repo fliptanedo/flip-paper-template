@@ -107,7 +107,9 @@
 
 %% FOR `NOT SHOUTING' CAPS (e.g. acronyms)
 %% ---------------------------------------
-\newcommand{\acro}[1]{\textsc{\MakeLowercase{#1}}}    
+% \newcommand{\acro}[1]{\textsc{\MakeLowercase{#1}}}    
+\usepackage{scalefnt} 
+\newcommand\acro[2][0.85]{{\scalefont{#1}#2}} 
 
 %% COMMON PHYSICS MACROS
 %% ---------------------
