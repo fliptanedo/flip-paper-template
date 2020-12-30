@@ -1,0 +1,133 @@
+%% LaTeX Paper Template, Flip Tanedo (flip.tanedo@ucr.edu)
+%% last updated: September 2020
+
+\documentclass[12pt]{article}
+% \pdfoutput=1 % for JHEP
+\newcommand{\FlipTR}{UCR-TR-2020-FLIP-NCC-75567}
+\input{FlipPreamble}
+% \input{FlipAdditionalHeader} %% Use this define additional macros
+\input{FlipPreambleEnd}
+
+
+\begin{document}
+
+%\thispagestyle{empty}		% default if no preprint #
+\thispagestyle{firststyle} 	% to include preprint # on first page
+							% but pdfsync may fail on 1st page
+
+\begin{center}
+
+    {\huge \bf Flat Opacity}
+
+    \vskip .7cm
+
+%% SINGLE AUTHOR FORMAT
+%% --------------------
+	\textbf{Flip Tanedo} \\
+	\texttt{\footnotesize \email{flip.tanedo@ucr.edu}}
+
+	\vspace{-1em}
+    \begin{institutions}[2.25cm]
+    \footnotesize
+    {\it 
+	    Department of Physics \& Astronomy, 
+	    University of  California, Riverside, 
+	    {CA} 92521	    
+	    }    
+    \end{institutions}
+
+
+%% MULTIPLE AUTHOR FORMAT
+%% --------------------
+%    { \bf 
+%    	Philip Tanedo$^{a}$
+%    	and 
+%    	Another Author$^{b}$ 
+%    	} 
+%    \\ 
+%    \vspace{-.2em}
+%    { \tt \footnotesize
+%	    \email{flip.tanedo@ucr.edu},
+%	    \email{another.author@university.edu}
+%    }
+%	
+%    \vspace{-.2cm}
+%
+%    \begin{institutions}[2.25cm]
+%    \footnotesize
+%    $^{a}$ 
+%    {\it 
+%	    Department of Physics \& Astronomy, 
+%	    University of  California, Riverside, 
+%	    {CA} 92521	    
+%	    }    
+%	\\ 
+%	\vspace*{0.05cm}   
+%	$^{b}$ 
+%	{\it 
+%        Department of Physics, 
+%        University, 
+%        University Town, CA 90210
+%        }
+%    \end{institutions}
+
+\end{center}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  ABSTRACT    %%%%
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+\noindent 
+This is a simple template for my papers. It's not very different from the plain article style, but it has most of the macros I use pre-written.
+\end{abstract}
+
+
+
+\small
+\setcounter{tocdepth}{2}
+\tableofcontents
+\normalsize
+%\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%%  THE CONTENT  %%%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+In the beginning... \lipsum[5]
+
+% Some examples that I'd like to keep handy
+\input{examples}
+
+
+
+ 
+
+
+
+ \section*{Acknowledgments}
+
+
+\textsc{p.t.}\ thanks 
+\emph{your name here}
+for useful comments and discussions. 
+%
+\textsc{p.t.} thanks the Aspen Center for Physics (NSF grant \#1066293) for its hospitality during a period where part of this work was completed. \textsc{p.t.} is supported by the DOE grant \textsc{de-sc}/0008541.
+
+%% Appendices
+% \appendix
+
+
+%% Bibliography
+%\bibliographystyle{utcaps} 	% arXiv hyperlinks, preserves caps in title
+%\bibliographystyle{utphys} 	% arXiv hyperlinks
+% \bibliography{bib title without .bib}
+
+
+\end{document}
