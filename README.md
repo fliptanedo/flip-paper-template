@@ -1,6 +1,8 @@
 # flip-paper-template
 A LaTeX paper template that I use for papers and notes.
 
+**Note**: This version is now no longer updated. Please refer to the [new repository](https://github.com/fliptanedo/flip-paper-template-2021).
+
 By Flip Tanedo (flip.tanedo@ucr.edu)
 
 Uses Jacques Distler's `utcaps.bst` and AAS TeX's `aas_macros.sty`, included in this repository. Place figures in the `\figures` directory. 
