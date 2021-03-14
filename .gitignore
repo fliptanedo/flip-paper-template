@@ -27,8 +27,11 @@
 *.toc
 *.xdv
 .DS_Store
-.gitignore
+!.gitignore
 *.sublime-project
 *.sublime-workspace
+*.sublime-workspace
 .texpadtmp/
+!/*.pdf
+*.pdf
 OLD/
